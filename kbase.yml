@@ -2,7 +2,7 @@ module-name:
     kb_escher
 
 module-description:
-    A KBase module
+    KBase Escher Service
 
 service-language:
     python
@@ -13,3 +13,5 @@ module-version:
 owners:
     [filipeliu]
 
+service-config:
+    dynamic-service: true
