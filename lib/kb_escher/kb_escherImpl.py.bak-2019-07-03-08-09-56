@@ -24,8 +24,8 @@ class kb_escher:
     # the latter method is running.
     ######################################### noqa
     VERSION = "0.0.1"
-    GIT_URL = "git@github.com:Fxe/kb_escher.git"
-    GIT_COMMIT_HASH = "f3ba015a4892b92f36c8329b051c493b7994f1e7"
+    GIT_URL = ""
+    GIT_COMMIT_HASH = ""
 
     #BEGIN_CLASS_HEADER
     #END_CLASS_HEADER
