@@ -2,6 +2,7 @@
 #BEGIN_HEADER
 import logging
 import os
+import escher
 
 from installed_clients.KBaseReportClient import KBaseReport
 #END_HEADER
@@ -33,7 +34,7 @@ class kb_escher:
     # be found
     def __init__(self, config):
         #BEGIN_CONSTRUCTOR
-        self.callback_url = os.environ['SDK_CALLBACK_URL']
+        #self.callback_url = os.environ['SDK_CALLBACK_URL']
         self.shared_folder = config['scratch']
         logging.basicConfig(format='%(created)s %(levelname)s: %(message)s',
                             level=logging.INFO)
@@ -50,7 +51,10 @@ class kb_escher:
         # return variables are: output
         #BEGIN list_maps
         
-        output = {}
+        namespace_filter = None
+        
+        local_maps = escher.list_cached_maps()
+        output = {'maps' : local_maps}
         
         #END list_maps
 
@@ -70,7 +74,10 @@ class kb_escher:
         # return variables are: output
         #BEGIN list_models
         
-        output = {}
+        namespace_filter = None
+        
+        local_models = escher.list_cached_models()
+        output = {'models' : local_models}
         
         #END list_models
 

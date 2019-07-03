@@ -53,7 +53,7 @@ class kb_escherTest(unittest.TestCase):
             print('Test workspace was deleted')
 
     # NOTE: According to Python unittest naming rules test method names should start from 'test'. # noqa
-    def test_list_maps_success(self):
+    def test_list_models_success(self):
         params = {}
         ret = self.serviceImpl.list_maps(self.ctx, params)
         print(ret)
