@@ -1,5 +1,5 @@
 module-name:
-    kb_escher
+    kb_escher_service
 
 module-description:
     KBase Escher Service
